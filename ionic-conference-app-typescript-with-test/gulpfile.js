@@ -11,7 +11,14 @@ var gulp = require('gulp'),
     webpack = require('webpack-stream'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    watch = require('gulp-watch');    
+    watch = require('gulp-watch'),
+    gutil = require('gulp-util'),
+    concat = require('gulp-concat'),
+    minifyCss = require('gulp-minify-css'),
+    rename = require('gulp-rename'),
+    sh = require('shelljs'),
+    fs = require("fs"),
+    Server = require('karma').Server; 
 
 
 var IONIC_DIR = "node_modules/ionic-framework/"
